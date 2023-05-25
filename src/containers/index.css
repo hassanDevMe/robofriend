@@ -1,0 +1,137 @@
+body {
+  padding:0;
+  margin: 0;
+  background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 10s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+  
+/* BEGA FONT */
+
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('./SEGA.woff') format('woff');
+  }
+
+
+h1{
+  font-family:'SEGA LOGO FONT' ;
+  font-weight: 200;
+  color:#bccac4;
+}
+
+.bg-light-green {
+  background-color: lightgreen;
+}
+
+.br3 {
+  border-radius: 8px;
+} 
+
+.pa3 {
+  padding: 8px;
+}
+
+.grow:hover{
+  transform: scale(105%);
+}
+
+.grow {
+  flex-grow: 2;
+  transition: 0.3s;
+}
+
+.bw2 {
+  border-width: 2px;
+}
+
+.shadow-5 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ma8 {
+  margin:8px
+}
+
+.ba {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+
+.b--green {
+  border-color: green;
+
+}
+
+.bg-light-blue {
+  background-color: lightblue;
+}
+
+
+.dotted-loader {
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-color: rgba(0,128,128,1);
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: rotate-right 2s linear infinite;
+}
+.dotted-loader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-width: 4px;
+  border-color: rgba(7,27,82,1);
+  border-style: solid dotted;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate-left 1s linear infinite;
+}
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+.scroll{
+  overflow-y:scroll;
+   border: 1px solid black;
+    height: 80vh
+
+}
